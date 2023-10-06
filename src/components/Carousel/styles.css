@@ -1,0 +1,124 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* PROPIIOS */
+.slide-container {
+  position: relative;
+}
+
+.my-swiper-slide {
+  .my-slide-image {
+    display: block; /* Mostrar la imagen por defecto */
+  }
+
+  .title-container,
+  .top-left,
+  .top-right,
+  .top-center {
+    opacity: 1; /* Ocultar elementos por defecto */
+  }
+
+  &:hover {
+    .title-container,
+    .top-left,
+    .top-right,
+    .top-center {
+      opacity: 0; /* Mostrar elementos cuando el mouse está sobre el slide */
+    }
+    .my-slide-image{
+      filter: opacity(.86);
+      filter: grayscale(80%);
+    }
+  }
+}
+
+.top-left {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background-color: rgb(255, 125, 18);
+  font-size: small;
+  color: white;
+  border-radius: 2px;
+  font-weight: bold;
+}
+.top-right {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background-color: #363636;
+  font-size: small;
+  color: white;
+  border-radius: 2px;
+  font-weight: bold;
+}
+.top-center {
+  position: absolute;
+  width: 30px;
+  height: 23px;
+  background-color: #ff3860;
+}
+.top-left {
+  top: 0;
+  left: 0;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+}
+.top-center {
+  top: 254px;
+  left: 90%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  font-size: small;
+}
+
+.title-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ff7d12;
+  padding: 5px 10px; /* Ajusta según tu preferencia */
+  border-radius: 5px; /* Añade esquinas redondeadas */
+  max-width: 200px; /* Ajusta según tu preferencia */
+  overflow: hidden;
+}
+
+.title {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.letras-Peque{
+  font-size: 1rem;
+}
+.letrasMasPeque{
+  font-size: .75rem;
+}
+.footerPage{
+  background-color: #111;
+  border-top: 1px solid rgba(255, 125, 18, 0.5);
+}

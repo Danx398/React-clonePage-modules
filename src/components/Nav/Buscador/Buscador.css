@@ -1,0 +1,24 @@
+.is-expanded {
+    flex-grow: 1;
+}
+.input{
+    background: #111;
+}
+.input.is-orange {
+    border-color: #ff7d12;
+}
+.input.is-rounded {
+    border-radius: 290486px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.button.in-orange {
+    background-color: #ff7d12;
+    border-color: transparent;
+    color: #fff;
+}
+.button.is-rounded {
+    border-radius: 290486px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
